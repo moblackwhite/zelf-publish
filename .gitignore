@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Documentation
+docs/_build/
+
+# 日志文件
+*.log
+log/
+logs/
+
+# 缓存
+.cache/
+*.pkl
+*.pickle
+
+# 大数据文件（使用 Git LFS 追踪）
+# 注意: CSV 文件在 .gitattributes 中配置为 LFS
+
+# 环境变量
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Ruff
+.ruff_cache/
+
+# uv
+uv.lock

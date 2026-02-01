@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    "name",
+    "surname",
+    "birthyear",
+    "birthplace",
+    "position",
+    "team",
+    "city",
+    "stadium",
+    "season",
+    "manager"
+  ],
+  "consistencies": [],
+  "initial_edges": [
+    [
+      "name",
+      "surname"
+    ],
+    [
+      "name",
+      "birthyear"
+    ],
+    [
+      "name",
+      "birthplace"
+    ],
+    [
+      "name",
+      "position"
+    ],
+    [
+      "name",
+      "team"
+    ],
+    [
+      "name",
+      "city"
+    ],
+    [
+      "city",
+      "stadium"
+    ],
+    [
+      "manager",
+      "season"
+    ],
+    [
+      "name",
+      "manager"
+    ]
+  ]
+}

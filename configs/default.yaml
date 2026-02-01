@@ -1,0 +1,65 @@
+# BN-LLM 默认配置文件
+# 所有参数的单一来源（Single Source of Truth）
+# CLI 参数可以覆盖这些默认值
+
+# ==================== 数据集配置 ====================
+dataset:
+  name: hospital
+  variant: null
+
+# ==================== 模型配置 ====================
+model:
+  # 默认使用 gpt-4o
+  name: gpt-4o
+  api_base: ${env:LLM_API_BASE_URL}
+  api_key: ${env:OPENAI_API_KEY}
+  temperature: 0.0
+
+# ==================== 贝叶斯网络配置 ====================
+bn:
+  # 构建方法: HYBRID, HYBRID_NO_CONSISTENCY, BDEU_ONLY, LLM_ONLY, USER_DEFINED
+  build_method: HYBRID
+  
+  # 消融实验参数
+  use_compensation_score: true
+  use_llm_construct: true
+  use_hierarchical: true
+  use_llm_inference: true
+  
+  # 参数实验
+  alpha: null
+  beta: null
+  
+  # BDEU 参数
+  equivalent_sample_size: 50
+
+# ==================== 实验配置 ====================
+experiment:
+  # 推理数量限制，-1 表示无限制
+  infer_limit: -1
+  # 并行工作线程数
+  worker_count: 32
+  # 批处理大小
+  batch_size: 250
+  # 空值标记
+  null_marker: "[NULL Cell]"
+  # 随机种子
+  random_state: 1234
+
+# ==================== 函数依赖配置 ====================
+fd:
+  # FD 检测方法: FD, DFD, FDS
+  method: DFD
+
+# ==================== 输出配置 ====================
+output:
+  base_dir: outputs
+  log_level: INFO
+
+# ==================== 数据根目录 ====================
+data_root: data/datasets
+
+# ==================== 缓存配置 ====================
+cache:
+  enabled: true
+  dir: outputs/cache

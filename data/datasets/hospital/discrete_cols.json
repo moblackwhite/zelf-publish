@@ -1,0 +1,17 @@
+[
+  "ProviderNumber",
+  "HospitalName",
+  "Address1",
+  "City",
+  "State",
+  "ZipCode",
+  "CountyName",
+  "PhoneNumber",
+  "HospitalType",
+  "HospitalOwner",
+  "EmergencyService",
+  "Condition",
+  "MeasureCode",
+  "MeasureName",
+  "Stateavg"
+]

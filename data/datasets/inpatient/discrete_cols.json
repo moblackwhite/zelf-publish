@@ -1,0 +1,13 @@
+[
+  "prvdr_id",
+  "frst_nm",
+  "lst_nm",
+  "adrs_id",
+  "adr_ln_1",
+  "cty",
+  "st",
+  "zip",
+  "org_pac_id",
+  "phn_numbr",
+  "NPI"
+]

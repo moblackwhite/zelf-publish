@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    "prvdr_id",
+    "frst_nm",
+    "lst_nm",
+    "adrs_id",
+    "adr_ln_1",
+    "cty",
+    "st",
+    "zip",
+    "org_pac_id",
+    "phn_numbr",
+    "NPI"
+  ],
+  "consistencies": [
+    [
+      "prvdr_id",
+      "NPI"
+    ],
+    [
+      "adrs_id",
+      "adr_ln_1"
+    ]
+  ],
+  "initial_edges": [
+    [
+      "prvdr_id",
+      "frst_nm"
+    ],
+    [
+      "prvdr_id",
+      "lst_nm"
+    ],
+    [
+      "adrs_id",
+      "cty"
+    ],
+    [
+      "phn_numbr",
+      "st"
+    ],
+    [
+      "adrs_id",
+      "zip"
+    ],
+    [
+      "phn_numbr",
+      "org_pac_id"
+    ],
+    [
+      "prvdr_id",
+      "phn_numbr"
+    ]
+  ]
+}

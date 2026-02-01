@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    "CCN",
+    "Facility",
+    "Address1",
+    "City",
+    "State",
+    "ZipCode",
+    "County",
+    "PhoneNumber",
+    "CMSRegion",
+    "Condition"
+  ],
+  "consistencies": [
+    [
+      "CCN",
+      "Facility",
+      "Address1"
+    ]
+  ],
+  "initial_edges": [
+    [
+      "CCN",
+      "City"
+    ],
+    [
+      "ZipCode",
+      "State"
+    ],
+    [
+      "CCN",
+      "ZipCode"
+    ],
+    [
+      "ZipCode",
+      "County"
+    ],
+    [
+      "CCN",
+      "PhoneNumber"
+    ],
+    [
+      "State",
+      "CMSRegion"
+    ]
+  ]
+}

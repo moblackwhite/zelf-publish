@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    "ProviderNumber",
+    "HospitalName",
+    "Address1",
+    "City",
+    "State",
+    "ZipCode",
+    "CountyName",
+    "PhoneNumber",
+    "HospitalType",
+    "HospitalOwner",
+    "EmergencyService",
+    "Condition",
+    "MeasureCode",
+    "MeasureName",
+    "Stateavg"
+  ],
+  "consistencies": [
+    [
+      "ProviderNumber",
+      "HospitalName",
+      "Address1",
+      "PhoneNumber"
+    ],
+    [
+      "MeasureCode",
+      "MeasureName"
+    ]
+  ],
+  "initial_edges": [
+    [
+      "ProviderNumber",
+      "City"
+    ],
+    [
+      "ProviderNumber",
+      "State"
+    ],
+    [
+      "ProviderNumber",
+      "ZipCode"
+    ],
+    [
+      "City",
+      "CountyName"
+    ],
+    [
+      "ProviderNumber",
+      "HospitalType"
+    ],
+    [
+      "ProviderNumber",
+      "HospitalOwner"
+    ],
+    [
+      "ZipCode",
+      "EmergencyService"
+    ],
+    [
+      "MeasureCode",
+      "Condition"
+    ]
+  ]
+}

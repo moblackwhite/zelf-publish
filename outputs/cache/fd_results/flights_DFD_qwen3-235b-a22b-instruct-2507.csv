@@ -1,0 +1,7 @@
+,src,flight,sched_dep_time,act_dep_time,sched_arr_time,act_arr_time
+src,0.0,-0.1,-0.1,-0.1,-0.1,-0.1
+flight,0.98,0.0,-0.3,0.98,0.95,0.95
+sched_dep_time,-0.1,-0.1,0.0,-0.1,-0.1,-0.1
+act_dep_time,-0.1,-0.1,-0.1,0.0,-0.1,-0.1
+sched_arr_time,-0.1,-0.1,-0.1,-0.1,0.0,-0.1
+act_arr_time,-0.1,-0.1,-0.1,-0.1,-0.15,0.0
